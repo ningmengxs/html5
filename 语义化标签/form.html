@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form>
+    <input type="email">
+    <input type="tel">
+    <input type="url">
+    <input type="search">
+    <input type="range" step="2" max="10" min="0" value="2">
+    <input type="number">
+    <input type="color">
+    <input type="datetime">
+    <input type="datetime-local">
+    <!--定义日期字段带有 calendar 和time 控件。-->
+    <input type="time">
+    <input type="date">
+    <input type="week">
+    <input type="month">
+    <input type="text" placeholder="请输入2-4个字符">
+    <input type="text" placeholder="请输入2-4个字符" name="user" autocomplete="off">
+    <!--autocomplete 自动完成功能 no 启用  off 禁止-->
+    <input type="text" placeholder="请输入2-4个字符" name="user" autocomplete="off" required="required">
+    <!--required="required" 该字段为必填字段-->
+    <input type="text" pattern="[A-z]{3}">
+    <!--pattern 正则表达式用于校验字段-->
+    <input type="submit" value="提交" formnovalidate>
+    <!--formnovalidate  提交表单时不会执行验证过程-->
+    <input type="submit">
+</form>
+</body>
+</html>
