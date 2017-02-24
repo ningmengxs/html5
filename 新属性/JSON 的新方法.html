@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        window.onload = function () {
+            // eavl 可以解析任何字符串变成JS
+            // parse 只能解析JSON 形式的字符串
+//            var str = 'function show() {alert(123)}';
+//            eavl(str);
+//            show()
+
+//            var json = {name: "hello"};
+//            var str = JSON.stringify(json);
+//            alert(str);
+
+            var a = {
+                name: {age: 100}
+            };
+            var str = JSON.stringify(a);
+            var b = JSON.parse(str);
+            b.name.age = 200;
+            alert(a.name.age)
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
